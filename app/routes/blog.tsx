@@ -1,5 +1,6 @@
 
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export function meta(_args: any) {
   return [{ title: "Mizan WAI - Blog & Resources" }];
@@ -108,20 +109,7 @@ export default function Blog() {
         </div>
       </main>
 
-      <footer className="border-t border-[#283939] bg-[#102222] py-12 px-4 md:px-10 lg:px-20">
-        <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-start gap-10">
-          <div className="max-w-xs">
-            <div className="flex items-center gap-3 text-white mb-4">
-              <span className="material-symbols-outlined text-[#13ecec] text-2xl">balance</span>
-              <h2 className="text-lg font-bold">Mizan WAI</h2>
-            </div>
-            <p className="text-[#9db9b9] text-sm leading-relaxed">Empowering businesses to navigate complexity through the balance of science and mastery.</p>
-          </div>
-        </div>
-        <div className="mx-auto max-w-7xl mt-12 pt-8 border-t border-[#283939] text-center">
-          <p className="text-[#9db9b9]/60 text-xs">© 2025 Mizan WAI. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer dark />
     </div>
   );
 }

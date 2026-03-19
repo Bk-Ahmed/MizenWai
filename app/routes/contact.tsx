@@ -1,5 +1,6 @@
 
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 import { useState } from "react";
 
 export function meta(_args: any) {
@@ -140,11 +141,7 @@ export default function Contact() {
         </section>
       </main>
 
-      <footer className="w-full border-t border-slate-200 bg-white py-12 px-10">
-        <div className="max-w-[1280px] mx-auto">
-          <p className="text-slate-400 text-xs text-center">© 2024 Mizan WAI. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

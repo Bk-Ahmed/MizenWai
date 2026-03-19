@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { Link } from "react-router";
-
+import { Footer } from "../components/Footer";
 export function meta(_args: any) {
   return [
     { title: "Mizan WAI - Conscious Business Begins Here" },
@@ -48,8 +48,8 @@ export default function Home() {
           <div className="max-w-[1280px] mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 flex flex-col gap-8">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/50 w-fit backdrop-blur-sm border border-slate-200">
-                <span className="w-2 h-2 rounded-full bg-[#13ecec] animate-pulse"></span>
-                <span className="text-xs font-semibold tracking-wide uppercase text-slate-600">Conscious Digital Ecosystem</span>
+                <span className="divider-teal"></span>
+                <span className="text-xs font-semibold tracking-wide uppercase text-slate-600">Science. Work. Mastery.</span>
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
                 Conscious Business <br />
@@ -146,18 +146,17 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
               <div className="absolute bottom-8 left-8 text-white max-w-sm">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="material-symbols-outlined text-[#13ecec]">all_inclusive</span>
-                  <span className="uppercase tracking-widest text-xs font-bold">Our Name Is Our Method</span>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-[#13ecec] mb-1">Mizan Wai</p>
                 </div>
                 <h3 className="text-2xl font-bold">Craftsmanship in the Digital Age</h3>
               </div>
             </div>
             <div className="flex items-center justify-center p-8 lg:p-20 bg-[#f6f8f8]">
               <div className="max-w-lg">
-                <span className="text-[#13ecec] font-bold text-sm tracking-widest uppercase mb-4 block">Our Philosophy</span>
-                <h2 className="text-4xl font-bold mb-6 text-slate-900">Mizan — The Balance</h2>
+                <div className="divider-teal mb-6"></div>
+                <h2 className="text-4xl font-bold mb-6 text-slate-900">Our name<br />is our method.</h2>
                 <blockquote className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-[#13ecec] pl-6 mb-6">
-                  "We believe true business transformation is born from conscious balance—the harmonious integration of disciplined execution, intelligent technology, and relentless pursuit of excellence."
+                  "True business transformation is born from conscious balance—the harmonious integration of disciplined execution, intelligent technology, and relentless pursuit of excellence."
                 </blockquote>
                 <p className="text-slate-500 leading-relaxed font-light mb-8">Science. Work. Mastery. Three words. One discipline. The WAI framework isn't a methodology—it's a philosophy of being.</p>
                 <Link to="/philosophy" className="border-b-2 border-[#13ecec] pb-1 text-slate-900 font-bold hover:text-[#13ecec] transition-colors inline-flex items-center gap-2">
@@ -172,9 +171,9 @@ export default function Home() {
         <section className="py-24 px-6 bg-white">
           <div className="max-w-[1280px] mx-auto">
             <div className="text-center mb-16">
-              <span className="text-[#13ecec] font-bold text-sm tracking-widest uppercase mb-3 block">The WAI Framework</span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Methodology</h2>
-              <p className="text-slate-500 max-w-xl mx-auto">A progressive, three-step journey from understanding to transformation.</p>
+              <span className="text-[#13ecec] font-bold text-sm tracking-widest uppercase mb-3 block">The MizenWAI Framework</span>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Three Steps. One Transformation.</h2>
+              <p className="text-slate-500 max-w-xl mx-auto">A progressive methodology from understanding to mastery.</p>
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* connecting line */}
@@ -258,8 +257,8 @@ export default function Home() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-slate-100">
-              {[["98%", "Client Retention"], ["3.2×", "Avg. Marketing ROI"], ["40%", "Operational Savings"], ["4+", "Industries Served"]].map(([val, label]) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 pt-16 border-t border-slate-100">
+              {[["98%", "Client Retention"], ["3.2×", "Avg. Marketing ROI"], ["40%", "Operational Savings"]].map(([val, label]) => (
                 <div key={label} className="text-center">
                   <div className="text-4xl font-black text-[#13ecec] mb-1">{val}</div>
                   <div className="text-sm text-slate-500 font-medium">{label}</div>
@@ -286,59 +285,8 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white pt-16 pb-8 px-6 border-t border-slate-200">
-        <div className="max-w-[1280px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div>
-              <Link to="/" className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-6 text-[#13ecec]">
-                  <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fillRule="evenodd" /></svg>
-                </div>
-                <span className="text-lg font-bold text-slate-900">Mizan WAI</span>
-              </Link>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">Conscious digital experience design balancing Science, Work, and Mastery.</p>
-              <div className="flex gap-3">
-                {["Li", "Tw", "In"].map((s) => (
-                  <a key={s} href="#" className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-[#13ecec] hover:text-slate-900 transition-all text-xs font-bold">{s}</a>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 mb-4">Ecosystem</h4>
-              <ul className="space-y-2 text-sm text-slate-500">
-                <li><Link to="/cbk" className="hover:text-[#13ecec] transition-colors">Physical Hub</Link></li>
-                <li><Link to="/digital-growth" className="hover:text-[#13ecec] transition-colors">Digital Agency</Link></li>
-                <li><Link to="/intelligence-systems" className="hover:text-[#13ecec] transition-colors">WAI Intelligence</Link></li>
-                <li><Link to="/ecosystem" className="hover:text-[#13ecec] transition-colors">Service Tiers</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-slate-500">
-                <li><Link to="/client-stories" className="hover:text-[#13ecec] transition-colors">Client Stories</Link></li>
-                <li><Link to="/blog" className="hover:text-[#13ecec] transition-colors">Blog & Insights</Link></li>
-                <li><Link to="/philosophy" className="hover:text-[#13ecec] transition-colors">Our Philosophy</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-slate-900 mb-4">Connect</h4>
-              <ul className="space-y-2 text-sm text-slate-500">
-                <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#13ecec] text-base mt-0.5">location_on</span><span>Tunis, Tunisia</span></li>
-                <li><a href="mailto:hello@mizanwai.com" className="hover:text-[#13ecec] transition-colors flex items-center gap-2"><span className="material-symbols-outlined text-base">mail</span>hello@mizanwai.com</a></li>
-                <li><Link to="/contact" className="hover:text-[#13ecec] transition-colors flex items-center gap-2"><span className="material-symbols-outlined text-base">calendar_month</span>Book Consultation</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
-            <p>© 2025 Mizan WAI. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-slate-600">Privacy Policy</a>
-              <a href="#" className="hover:text-slate-600">Terms of Service</a>
-              <a href="#" className="hover:text-slate-600">Cookie Preferences</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      <Footer />
     </div>
   );
 }
